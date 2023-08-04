@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="info">
+        <div class="info__score">
+          <p class="score__title title">Текущий счёт</p>
+          <div class="score">
+            <p class="score__value">0</p>
+          </div>
+        </div>
+        <div class="info__record">
+          <p class="record__title title">Рекорд</p>
+          <div class="record">
+            <p class="record__value">0</p>
+          </div>
+        </div>
+        <div class="info__size">
+          <p class="size__title title">Размер поля</p>
+          <button class="size__button button" enabled>Маленькое</button>
+          <ul class="size__list">
+            <li class="size__list__item item-1">Маленькое</li>
+            <li class="size__list__item item-2">Среднее</li>
+            <li class="size__list__item item-3">Большое</li>
+          </ul>
+        </div>
+        <div class="info__teleport">
+          <p class="teleport__title">Закрытые стены</p>
+          <div class="teleport__checkbox">
+            <div class="teleport__checkbox_empty"></div>
+            <div class="teleport__checkbox_checked"></div>
+          </div>
+        </div>
+        <div class="info__control">
+          <p class="control__description">
+            Управление<br />
+            ← ↑ → ↓<br />
+            или <br />
+            W, S, A, D
+          </p>
+        </div>
+      </div>
+      <div class="field__container">
+        <p class="instruction">Нажмите любую клавишу управления чтобы начать</p>
+      </div>
+      <div class="restart">
+        <div class="restart__background"></div>
+        <div class="restart__container">
+          <p class="restart__title"></p>
+
+          <div class="results">
+            <p class="restart__score_title">Ваш счёт</p>
+            <p class="restart__score__value">0</p>
+            <p class="restart__record_title">Рекорд</p>
+            <p class="restart__record__value">0</p>
+          </div>
+          <button class="restart__button button">Заново</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
